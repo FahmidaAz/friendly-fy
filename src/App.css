@@ -1,0 +1,35 @@
+.footer {
+  background-color: rgb(29, 27, 27);
+  color:white;
+  width: auto;
+  text-align: center;
+  padding: 100px;
+}
+.navBar nav{
+  background-color: rgba(5, 50, 102, 0.847);
+  text-align: center;
+  color: aliceblue;
+  padding: 10px;
+}
+.navBar a{
+  text-decoration: none;
+  color: aliceblue;
+  padding: 10px;
+}
+.App{
+  /* background-image:url('./components/images/background.png'); */
+  background: radial-gradient(circle, rgb(74, 115, 174), rgb(34, 106, 169));
+  background-size: cover;
+  background-position: center;
+  padding: auto;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
