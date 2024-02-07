@@ -1,5 +1,7 @@
 import React from 'react';
 import './User.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faUserPlus} from '@fortawesome/free-solid-svg-icons';
 
 const User = (props) => {
     const userInfo = props.user;
@@ -9,7 +11,7 @@ const User = (props) => {
               <img src={userInfo.image} />
               <h1>{userInfo.first_name}</h1>   
            </div>
-           <button> + Add Friend</button>
+           <button> <FontAwesomeIcon icon={faUserPlus}/> Add Friend</button>
         </div>
     );
 };

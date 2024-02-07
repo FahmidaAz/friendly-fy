@@ -16,6 +16,10 @@
   color: aliceblue;
   padding: 10px;
 }
+.navBar a:hover{
+  cursor: pointer;
+  background-color:  rgba(108, 153, 204, 0.847);
+}
 .App{
   /* background-image:url('./components/images/background.png'); */
   background: radial-gradient(circle, rgb(74, 115, 174), rgb(34, 106, 169));

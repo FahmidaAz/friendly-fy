@@ -19,6 +19,11 @@
     border-radius: 5px;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
+.usrInfo button:hover{
+    cursor: pointer;
+    background-color:  rgba(108, 153, 204, 0.847);
+}
+
  .description {
     display: flex;
     

@@ -19,10 +19,11 @@ function App() {
     <div className="App">
       <div className="navBar">
         <nav>
-          <a href="Home"><FontAwesomeIcon icon={faHome}/>Home</a>
+          <a href="Home"><FontAwesomeIcon icon={faHome}/> Home</a>
           <a href="Notification"><FontAwesomeIcon icon={faBell}/> Notification</a>
           <a href="Friends"> <FontAwesomeIcon icon={faUserFriends}/> Friends</a>
         </nav>
+         
       </div>
         {
           users.map(usr =><User user={usr}></User>)
