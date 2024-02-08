@@ -1,0 +1,26 @@
+.profile{
+    display: flex;
+    position: fixed;
+    background-color: aliceblue;
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin: 55px;
+    padding:40px;
+    
+}
+.proDescription{
+    padding: 20px;
+}
+.proDescription p{
+    color: gray;
+}
+.navigation{
+    background-color: lightblue;
+    padding: 20px;
+    
+}
+.navigation a{
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}

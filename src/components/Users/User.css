@@ -1,0 +1,32 @@
+.usrInfo{
+   display: flex;
+}
+.usrInfo button{
+    width: 100px;
+    height: 50px;
+    background:linear-gradient(to right, rgb(4, 34, 67),skyblue);
+    color:aliceblue;
+    border-radius: 5px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.usrInfo button:hover{
+    cursor: pointer;
+    background-color:  rgba(108, 153, 204, 0.847);
+}
+
+
+ .description {
+    background:linear-gradient(to right, rgb(4, 34, 67),skyblue);
+    border-bottom: 1px solid rgb(70, 68, 68);
+    padding: 30px;
+    margin: 50px;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;  
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    color: beige;
+}
+.info{
+    text-align: right;
+}

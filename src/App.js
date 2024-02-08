@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import users from './user/userData.json';
+import users from './userdata/userData.json';
 import { useEffect, useState } from 'react';
-import User from './components/User';
+import User from './components/Users/User';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faBell,faUserFriends,faHome} from '@fortawesome/free-solid-svg-icons';
-
+import {faBell,faUserFriends,faHome,faCopyright} from '@fortawesome/free-solid-svg-icons';
+import Profile from './components/Profile/Profile';
 
 
 function App() {
@@ -25,11 +25,18 @@ function App() {
         </nav>
          
       </div>
-        {
-          users.map(usr =><User user={usr}></User>)
-        }
+      <div className="container">
+            <div className="mappingUsers">
+                {
+                 users.map(usr =><User user={usr}></User>)
+                }
+             </div>
+            <div className="homepage">
+             <Profile></Profile>
+            </div>
+        </div>
       <div className='footer'>
-      <footer>All rights are reserved, Fahmida Azmin, 2024</footer>
+      <footer><FontAwesomeIcon icon={faCopyright}/> All rights are reserved, Fahmida Azmin, 2024</footer>
       </div>
     </div>
   );

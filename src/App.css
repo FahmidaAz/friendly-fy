@@ -10,6 +10,8 @@
   text-align: center;
   color: aliceblue;
   padding: 10px;
+  position: fixed;
+  width: 1430px;
 }
 .navBar a{
   text-decoration: none;
@@ -22,12 +24,20 @@
 }
 .App{
   /* background-image:url('./components/images/background.png'); */
-  background: radial-gradient(circle, rgb(74, 115, 174), rgb(34, 106, 169));
+  background: radial-gradient(circle, rgb(224, 230, 238), rgb(34, 106, 169));
   background-size: cover;
   background-position: center;
   padding: auto;
 }
-
+.container{
+  display: flex;
+  
+}
+/* .homepage{
+  
+  
+  
+} */
 
 @keyframes App-logo-spin {
   from {
