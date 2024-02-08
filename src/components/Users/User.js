@@ -5,6 +5,8 @@ import {faUserPlus} from '@fortawesome/free-solid-svg-icons';
 
 const User = (props) => {
     const userInfo = props.user;
+    const handleFriend = props.handleFriend;
+    const buttonText = props.buttonText;
     return (
         <div className="usrInfo">
            <div className="description">
@@ -14,7 +16,7 @@ const User = (props) => {
               <p>Worked at: {userInfo.Work}</p>
               <p>City: {userInfo.City}</p>
               <p>Location: {userInfo.Country}</p> 
-              <button><FontAwesomeIcon icon={faUserPlus}/> Add Friend</button>
+              <button onClick={()=>handleFriend(userInfo)}><FontAwesomeIcon icon={faUserPlus}/> {buttonText}</button>
             </div>
            </div>
 

@@ -3,11 +3,12 @@ import profileImg from'../images/DSC03334.jpeg';
 import './Profile.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faUserFriends,faMessage,faPhotoFilm,faVideo} from '@fortawesome/free-solid-svg-icons';
-const Profile = () => {
+const Profile = (props) => {
     const imgStyle = {
         width:'120px',
          height:'200px'
        }
+       const friends = props.total;
     return (
         <div>
         <div className="profile">
@@ -23,7 +24,7 @@ const Profile = () => {
             <a href="#post">Posts</a>
             <a href="#photos"><FontAwesomeIcon icon={faPhotoFilm}/> Photos</a>
             <a href="#videos"><FontAwesomeIcon icon={faVideo}/> Videos</a>
-            <a href="#friend"><FontAwesomeIcon icon={faUserFriends}/></a>
+            <a href="#friend"><FontAwesomeIcon icon={faUserFriends}/>{friends}</a>
             <a href="#msg"><FontAwesomeIcon icon={faMessage}/></a>
            </div>
            </div>     
